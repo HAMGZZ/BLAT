@@ -14,4 +14,4 @@ The signal going to the valve must be a 200Hz PWM signal at 10V (0-10V). At 20% 
 BLAT! Converts simple 0-5V logic signal into the required 10v PWM 200Hz signal. Further this board controls the power to the valves through the relay.
 
 ## PCB:
-![alt text](PCB1.img)
+![alt text](PCB1.png)
