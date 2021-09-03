@@ -1,7 +1,7 @@
 /*
  * BLAT! Commodore OEM Bi-model muffler actuator
  * Lewis Hamilton September 2021
- * Version 1.0.0
+ * Version 1.0.0-alpha
 */
 
 #include <Arduino.h>
