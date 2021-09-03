@@ -14,7 +14,6 @@ int main()
     long int counter1 = 0;  // Turn on open delay
     long int ton;
     long int toff;
-    bool JustChanged = false;
 
     while(1)
     {
