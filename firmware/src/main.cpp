@@ -1,6 +1,7 @@
 /*
  * BLAT! Commodore OEM Bi-model muffler actuator
  * Lewis Hamilton September 2021
+ * Version 1.0.0
 */
 
 #include <Arduino.h>
@@ -10,13 +11,14 @@
 
 int main()
 {
-    long int counter = 0;
+    long int counter1 = 0;  // Turn on open delay
     long int ton;
     long int toff;
+    bool JustChanged = false;
 
     while(1)
     {
-        if(digitalRead(STATE) || counter <= 1000)
+        if(digitalRead(STATE) || counter1 <= 1000)
         {
             digitalWrite(LED, HIGH);
             ton = 3995;
@@ -33,9 +35,9 @@ int main()
         delayMicroseconds(ton);
         digitalWrite(PWM_OUT, LOW);
         delayMicroseconds(toff);
-        if(counter <= 1000)
+        if(counter1 <= 1000)
         {
-            counter++;
+            counter1++;
         }
 
     }
