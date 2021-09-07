@@ -1,5 +1,5 @@
 # BLAT!
-BLAT! is a board that controls the OEM BiModel on the holden commodore SSV series. Initially made to retrofit them to an older 2010 commodore. BLAT! can interface with the [SoundBoi](github.cpm/hamgzz/blat) controller that connects to the car and automatically controls the valves.
+BLAT! is a board that controls the OEM BiModel on the holden commodore SSV series. Initially made to retrofit them to an older 2010 commodore. BLAT! can interface with the [SoundBoi](github.com/HAMGZZ/SoundBoi) controller that connects to the car and automatically controls the valves.
 
 ## Exhaust Valve Pinout:
 1. GND
