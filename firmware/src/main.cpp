@@ -4,6 +4,8 @@
  * Version 1.1.0
  * 
  * Change log:
+ * Version 1.1.1:
+ * - Added pin directions
  * 
  * Version 1.1.0:
  * - Added a delay so the valved could only be closed/opened after 1.5 seconds of previous change.
