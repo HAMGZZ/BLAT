@@ -15,7 +15,7 @@
 
 #include <Arduino.h>
 
-#define PWM_OUT 2
+#define PWM_OUT 3
 #define LED     3
 #define STATE   1
 
@@ -31,6 +31,8 @@ int main()
     long int ton;
     long int toff;
     bool currentlyOpen = false;
+    pinMode(STATE, INPUT_PULLUP);
+    pinMode(LED, OUTPUT);
 
     while(1)
     {
@@ -40,6 +42,7 @@ int main()
             ton = LONG_TIME;
             toff = SHORT_TIME;
             counter2 = CHANGE_DELAY;
+            currentlyOpen = true;
         }
         else if((!digitalRead(STATE) && currentlyOpen) && !counter2)
         {
@@ -47,6 +50,7 @@ int main()
             ton = SHORT_TIME;
             toff = LONG_TIME;
             counter2 = CHANGE_DELAY;
+            currentlyOpen = false;
         }
 
         digitalWrite(PWM_OUT, HIGH);
