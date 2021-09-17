@@ -17,7 +17,7 @@
 
 #include <Arduino.h>
 
-#define PWM_OUT 3
+#define PWM_OUT 2
 #define LED     3
 #define STATE   1
 
@@ -34,6 +34,7 @@ int main()
     long int toff;
     bool currentlyOpen = false;
     pinMode(STATE, INPUT_PULLUP);
+    pinMode(PWM_OUT, OUTPUT);
     pinMode(LED, OUTPUT);
 
     while(1)
