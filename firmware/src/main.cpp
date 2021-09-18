@@ -21,7 +21,7 @@
 #define LED     3
 #define STATE   1
 
-#define CHANGE_DELAY    300
+#define CHANGE_DELAY    100
 #define TURN_ON_DELAY   1000
 #define LONG_TIME       3995    // 4 miliseconds for 80% on or off
 #define SHORT_TIME      995     // 1 milisecond for 20% on or off
